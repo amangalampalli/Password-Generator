@@ -1,10 +1,3 @@
-//
-//  Content-ViewModel.swift
-//  PasswordGenerator
-//
-//  Created by Federico on 05/03/2022.
-//
-
 import Foundation
 import SwiftUI
 
@@ -12,7 +5,7 @@ extension ContentView {
     class ViewModel: ObservableObject {
         @Published var passwords: [Password] = []
         @Published var containsSymbols = true
-        @Published var containsUppercase = false
+        @Published var containsUppercase = true
         @Published var length = 12
         
         init() {

@@ -28,7 +28,7 @@ struct StrengthMeter: View {
                 Spacer().frame(height: 15)
                 
                 HStack {
-        
+                    
                     Spacer()
                     
                     RoundedRectangle(cornerRadius: 10)
@@ -67,9 +67,9 @@ extension StrengthMeter {
     func calculateOffset(entropy: Double) -> CGFloat {
         
         switch(entropy) {
-        case 0...4:
+        case 0...30:
             return ((-190 * UIScreen.main.bounds.width / ratio) / 2) + 5 * UIScreen.main.bounds.width / ratio
-        case 97...113:
+        case 100...120:
             return ((-190 * UIScreen.main.bounds.width / ratio) / 2) + 186 * UIScreen.main.bounds.width / ratio
         default:
             return ((-190 * UIScreen.main.bounds.width / ratio) / 2) + entropy * UIScreen.main.bounds.width / ratio
