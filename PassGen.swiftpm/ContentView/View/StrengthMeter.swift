@@ -1,10 +1,3 @@
-//
-//  SwiftUIView.swift
-//  
-//
-//  Created by Aditya Mangalampalli on 4/22/22.
-//
-
 import SwiftUI
 
 struct StrengthMeter: View {
