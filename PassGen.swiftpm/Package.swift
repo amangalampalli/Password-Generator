@@ -37,7 +37,8 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "AppModule",
-            path: "."
+            path: ".",
+            exclude:["README.md", "PassGen-Demo.gif"]
         )
     ]
 )
